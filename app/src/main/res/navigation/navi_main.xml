@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navi_main"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.dwsong.android.map.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.dwsong.android.map.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_searchMapFragment"
+            app:destination="@id/searchMapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchMapFragment"
+        android:name="com.dwsong.android.map.SearchMapFragment"
+        android:label="fragment_search_map"
+        tools:layout="@layout/fragment_search_map" />
+    <fragment
+        android:id="@+id/advertisementFragment"
+        android:name="com.dwsong.android.map.AdvertisementFragment"
+        android:label="fragment_advertisement"
+        tools:layout="@layout/fragment_advertisement" />
+    <fragment
+        android:id="@+id/mypageFragment"
+        android:name="com.dwsong.android.map.MypageFragment"
+        android:label="fragment_mypage"
+        tools:layout="@layout/fragment_mypage" />
+</navigation>

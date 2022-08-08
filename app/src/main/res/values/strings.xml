@@ -2,4 +2,10 @@
     <string name="app_name">Map</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="search">검색</string>
+    <string name="home">홈</string>
+    <string name="psytest">심리검사</string>
+    <string name="advertisement">홍보관</string>
+    <string name="mypage">마이페이지</string>
 </resources>
